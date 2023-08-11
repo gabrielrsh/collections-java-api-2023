@@ -1,4 +1,4 @@
-package main.list.OperacoesBasicas;
+package main.list.OperacoesBasicas.exercicio1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +16,8 @@ public class ListaTarefa {
 
     public void removerTarefa(String descricao) {
         List<Tarefa> tarefasParaRemover = new ArrayList<>();
-        for(Tarefa t: listaTarefa) {
-            if(t.getDescricao().equalsIgnoreCase(descricao)){
+        for (Tarefa t : listaTarefa) {
+            if (t.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefasParaRemover.add(t);
             }
         }
