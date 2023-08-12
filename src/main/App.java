@@ -1,32 +1,18 @@
 package main;
 
-import main.list.OperacoesBasicas.exericio2.CarrinhoDeCompras;
+import main.list.Ordenacao.exercicio1.CatalogoLivros;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        CatalogoLivros catalogoLivros = new CatalogoLivros();
 
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
+        catalogoLivros.adicionarLivro("Livro de 1", "kleiton", 2000);
+        catalogoLivros.adicionarLivro("Livro de 1", "craudio", 2022);
+        catalogoLivros.adicionarLivro("Livro de 2", "kleiton", 1888);
+        catalogoLivros.adicionarLivro("Livro de 3", "junin", 1990);
 
-        carrinho.adicionarItem("Celular", 1250.00, 1);
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
-
-        carrinho.adicionarItem("Teclado", 350.12, 1);
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
-
-        carrinho.adicionarItem("Caneta", 1.1, 3);
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
-
-        carrinho.removeItem("celular");
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
-
-        carrinho.removeItem("caneta");
-        carrinho.exibirItens();
-        System.out.println(carrinho.calculaValorTotal());
+        //System.out.println(catalogoLivros.pesquisarPorAutor("kleiton"));
+        //System.out.println(catalogoLivros.pesquisarPorIntervaloAnos(2030, 2050));
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Livro de 1"));
     }
 }
