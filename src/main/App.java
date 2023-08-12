@@ -1,6 +1,6 @@
 package main;
 
-import main.list.Ordenacao.exercicio1.CatalogoLivros;
+import main.list.Pesquisa.exercicio1.CatalogoLivros;
 
 public class App {
     public static void main(String[] args) throws Exception {
